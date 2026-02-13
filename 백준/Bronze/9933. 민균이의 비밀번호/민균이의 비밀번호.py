@@ -8,8 +8,10 @@ for _ in range(n):
     # 회문이면 즉시 정답
     if s == r:
         print(len(s), s[len(s)//2])
-
+        break        
+        
     if r in seen:
         print(len(s), s[len(s)//2])
+        break
 
     seen.add(s)
